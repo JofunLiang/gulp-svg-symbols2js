@@ -2,7 +2,8 @@
 The plugin inject SVG Symbols files into JavaScript, Works with [gulp-svg-symbols](https://www.npmjs.com/package/gulp-svg-symbols).
 
 ![npm](https://img.shields.io/npm/v/gulp-svg-symbols2js.svg)
-![GitHub](https://img.shields.io/github/license/jofunliang/gulp-svg-symbols2js.svg)
+![npm](https://img.shields.io/npm/dm/gulp-svg-symbols2js.svg)
+![NPM](https://img.shields.io/npm/l/gulp-svg-symbols2js.svg)
 
 # Usage
 
