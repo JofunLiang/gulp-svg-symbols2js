@@ -39,4 +39,4 @@ gulp.task("default", function(){
 ```
 
 # License
-This software is released under an [MIT Licence](!./MIT Licence) with an additional non-advertising clause.
+This software is released under an [MIT Licence](./MIT Licence) with an additional non-advertising clause.
