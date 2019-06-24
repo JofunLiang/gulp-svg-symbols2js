@@ -11,6 +11,14 @@
     "svg-symbols2js"
   ],
   "author": "jofun",
+  "homepage": "https://github.com/JofunLiang/gulp-svg-symbols2js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JofunLiang/gulp-svg-symbols2js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JofunLiang/gulp-svg-symbols2js/issues"
+  },
   "license": "ISC",
   "dependencies": {
     "js-string-escape": "^1.0.1",
