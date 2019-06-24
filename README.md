@@ -1,5 +1,5 @@
 # gulp-svg-symbols2js
-The plugin inject SVG Symbols files into JavaScript, Works with gulp-svg-symbols.
+The plugin inject SVG Symbols files into JavaScript, Works with [gulp-svg-symbols](https://www.npmjs.com/package/gulp-svg-symbols).
 
 ![npm](https://img.shields.io/npm/v/gulp-svg-symbols2js.svg)
 ![GitHub](https://img.shields.io/github/license/jofunliang/gulp-svg-symbols2js.svg)
@@ -25,7 +25,7 @@ gulp.task("default", function(){
 })
 ```
 
-This will change the SVG Symbols files into JavaScript. If you want to do compression, you need to install gulp-uglify:
+This will change the SVG Symbols files into JavaScript. If you want to do compression, you need to install [gulp-uglify](https://www.npmjs.com/package/gulp-uglify):
 ```js
 var gulp = require('gulp');
 var svgSymbols = require('gulp-svg-symbols');
@@ -42,4 +42,4 @@ gulp.task("default", function(){
 ```
 
 # License
-This software is released under an [MIT Licence](./MIT Licence) with an additional non-advertising clause.
+This software is released under an [MIT Licence](./LICENSE.md) with an additional non-advertising clause.
