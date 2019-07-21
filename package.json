@@ -1,6 +1,6 @@
 {
   "name": "gulp-svg-symbols2js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inject SVG Symbols into JavaScript.  Works with buffers.",
   "main": "src/gulp-svg-symbols2js.js",
   "scripts": {

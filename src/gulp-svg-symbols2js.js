@@ -30,7 +30,7 @@ module.exports = function () {
         var svg = bufferToString(file.contents, enc);
         var content = wrapper.replace('$$$', svg);
         
-        file.contents = new Buffer(content, 'utf8');
+        file.contents = Buffer.from(content, 'utf8');
         file.path = replaceExt(file.path, '.js');
       }
       
