@@ -1,20 +1,18 @@
 # gulp-svg-symbols2js
-The plugin inject SVG Symbols files into JavaScript, Works with [gulp-svg-symbols](https://www.npmjs.com/package/gulp-svg-symbols).
+该插件将SVG Symbols文件注入JavaScript，与 [gulp-svg-symbols](https://www.npmjs.com/package/gulp-svg-symbols)配合使用。
 
 ![npm](https://img.shields.io/npm/v/gulp-svg-symbols2js.svg)
 ![npm](https://img.shields.io/npm/dm/gulp-svg-symbols2js.svg)
 ![NPM](https://img.shields.io/npm/l/gulp-svg-symbols2js.svg)
 
-[中文文档](docs-zh.md)
+# 用法
 
-# Usage
-
-Install gulp-svg-symbols2js as a development dependency:
+安装gulp-svg-symbols2js作为开发依赖项：
 ```
 npm install --save-dev gulp-svg-symbols2js
 ```
 
-Next, add it to one of the streams in your gulpfile.js:
+接下来，将其添加到gulpfile.js中的任务：
 ```js
 var gulp = require('gulp');
 var svgSymbols = require('gulp-svg-symbols');
@@ -28,7 +26,7 @@ gulp.task("default", function(){
 })
 ```
 
-This will change the SVG Symbols files into JavaScript. If you want to do compression, you need to install [gulp-uglify](https://www.npmjs.com/package/gulp-uglify):
+这会将SVG Symbols文件更改为JavaScript。如果要进行压缩，则需要安装[gulp-uglify](https://www.npmjs.com/package/gulp-uglify):
 ```js
 var gulp = require('gulp');
 var svgSymbols = require('gulp-svg-symbols');
@@ -43,6 +41,3 @@ gulp.task("default", function(){
     .pipe(gulp.dest("dist/icons"));
 })
 ```
-
-# License
-This software is released under an [MIT Licence](./LICENSE.md) with an additional non-advertising clause.
