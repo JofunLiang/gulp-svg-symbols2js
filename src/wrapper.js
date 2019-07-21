@@ -1,4 +1,4 @@
-if (typeof document !== 'undefined' && document.addEventListener) {
+if (typeof document !== 'undefined') {
   
   (function(doc, svgSymbol) {
     
@@ -28,18 +28,24 @@ if (typeof document !== 'undefined' && document.addEventListener) {
       }
     }
     
-    /**
-     * The code checks that the DOM is ready.
-     * and executes the appendSvg function when the DOM is ready.
-     */
-    if (~['complete', 'loaded', 'interactive'].indexOf(doc.readyState)) {
-      setTimeout(appendSvg, 0);
-    } else {
-      doc.addEventListener('DOMContentLoaded', function handler () {
-        doc.removeEventListener('DOMContentLoaded', handler, false);
-        appendSvg();
-      }, false)
-    }
+    // The function checks that the DOM is ready.
+    function ready(fn) {
+      if (doc.addEventListener) {
+        doc.addEventListener('DOMContentLoaded', function handler() {
+          doc.removeEventListener('DOMContentLoaded', handler, false);
+          fn();
+        }, false);
+      } else if (doc.attachEvent) { //IE
+        doc.attachEvent('onreadystatechange', function handler() {
+          if (doc.readyState == 'complete') {
+            doc.detachEvent('onreadystatechange', handler);
+            fn();
+          }
+        });
+      }
+    };
+
+    ready(appendSvg);
     
   })(document, '$$$');
   

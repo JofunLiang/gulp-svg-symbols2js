@@ -8,7 +8,7 @@ symbols2js = require('../src/gulp-svg-symbols2js');
 
 function makeFile (contents, path) {
   if (typeof contents === 'string') {
-    contents = new Buffer(contents, 'utf8');
+    contents = Buffer.from(contents, 'utf8');
   }
 
   return new Vinyl({
